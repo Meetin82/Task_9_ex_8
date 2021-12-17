@@ -71,8 +71,8 @@ public class ConsoleMain {
             List<Integer> list1 = ListUtils.intArrayToList(arr1);
             List<Integer> list2 = ListUtils.intArrayToList(arr2);
 
-            List<Integer> locationOnlyInTheFirstAndSecondListMakeInList = solution.isOnlyInTheFirstAndSecondList(list1, list2);
-            int[] locationOnlyInTheFirstAndSecondListMakeInArray = ListUtils.intListToArray(locationOnlyInTheFirstAndSecondListMakeInList);
+            List<Integer> locationOnlyInTheFirstAndSecondListMakedInList = solution.isOnlyInTheFirstAndSecondList(list1, list2);
+            int[] locationOnlyInTheFirstAndSecondListMakedInArray = ListUtils.intListToArray(locationOnlyInTheFirstAndSecondListMakeInList);
 
             PrintStream out = (params.outputFile != null) ? new PrintStream(params.outputFile) : System.out;
             out.println(ArrayUtils.toString(locationOnlyInTheFirstAndSecondListMakeInArray));
