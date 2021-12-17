@@ -52,7 +52,7 @@ public class ConsoleMain {
         if (params.help) {
             PrintStream out = params.error ? System.err : System.out;
             out.println("Usage:");
-            out.println("  <cmd> args <input-file> (<output-file>)");
+            out.println("  <cmd> args <input-file1> <input-file2> (<output-file>)");
             out.println("  <cmd> --help");
             out.println("  <cmd> --window  // show window");
             System.exit(params.error ? 1 : 0);
