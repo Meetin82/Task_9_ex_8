@@ -22,7 +22,7 @@ public class FrameMain extends JFrame {
     private JButton buttonLoadInput1FromFile;
     private JButton buttonRandomInput;
     private JButton buttonSaveInput1IntoFile;
-    private JButton buttonCompleteSolution;
+    private JButton buttonRun;
     private JButton buttonSaveOutputIntoFile;
     private JTable tableOutput;
     private JTable tableInput1;
@@ -59,7 +59,7 @@ public class FrameMain extends JFrame {
         fileChooserOpen.addChoosableFileFilter(filter);
         fileChooserSave.addChoosableFileFilter(filter);
 
-        buttonCompleteSolution.addActionListener(new ActionListener() {
+        buttonRun.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
                 try {
@@ -205,9 +205,9 @@ public class FrameMain extends JFrame {
         buttonSaveInput1IntoFile = new JButton();
         buttonSaveInput1IntoFile.setText("Сохранить в файл");
         panelMain.add(buttonSaveInput1IntoFile, new GridConstraints(1, 2, 1, 2, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
-        buttonCompleteSolution = new JButton();
-        buttonCompleteSolution.setText("Выполнить");
-        panelMain.add(buttonCompleteSolution, new GridConstraints(2, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+        buttonRun = new JButton();
+        buttonRun.setText("Выполнить");
+        panelMain.add(buttonRun, new GridConstraints(2, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         final Spacer spacer1 = new Spacer();
         panelMain.add(spacer1, new GridConstraints(2, 1, 1, 6, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, 1, null, null, null, 0, false));
         buttonSaveOutputIntoFile = new JButton();
